@@ -1,4 +1,5 @@
-import Heading from "../components/Heading";
+import Heading from "../../components/Heading";
+import styles from "./PostInfo.module.scss"
 
 const PostInfo = ({post}) => {
     const {title, body} = post || {};
@@ -8,9 +9,9 @@ const PostInfo = ({post}) => {
     }
 
     return(
-        <section>
+        <section className={styles.wrapper}>
             <Heading tag={'h3'} text={title}/>
-            <div>
+            <div className={styles.text}>
                 {body}
             </div>
         </section>

@@ -1,0 +1,13 @@
+.wrapper{
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .posts{
+    margin-top: 20px;
+    .post{
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}

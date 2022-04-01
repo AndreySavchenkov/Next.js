@@ -1,6 +1,6 @@
-import Header from './Header';
-import Footer from './Footer';
-import styles from './Layout.module.scss';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/Footer';
+import styles from '../../components/Layout/Layout.module.scss';
 
 const Layout = ({children}) => (
     <div className={styles.container}>

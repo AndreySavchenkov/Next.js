@@ -1,4 +1,5 @@
-import Heading from "../components/Heading";
+import Heading from "../../components/Heading";
+import styles from "./ContactInfo.module.scss";
 
 const ContactInfo = ({contact}) => {
     const {name,email,address} = contact || {};
@@ -9,16 +10,19 @@ const ContactInfo = ({contact}) => {
     }
 
     return(
-        <section>
+        <section className={styles.wrapper}>
             <Heading tag={'h3'} text={name}/>
-            <div>
-                <strong>Email:</strong>
-                {email}
+            <div className={styles.innerContainer}>
+                <div className={styles.item}>
+                    <strong className={styles.email}>Email:</strong>
+                    {email}
+                </div>
+                <div className={styles.item}>
+                    <strong className={styles.title}>Address:</strong>
+                    {`${street}, ${suite}, ${city}, ${zipcode}`}
+                </div>
             </div>
-            <div>
-                <strong>Address:</strong>
-                {`${street}, ${suite}, ${city}, ${zipcode}`}
-            </div>
+
         </section>
     )
 }

@@ -1,0 +1,20 @@
+.wrapper{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #d2d2d2;
+  .links{
+    margin-left: 15px;
+    display: flex;
+    color: #949494;
+    .link{
+      margin-right: 10px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .active{
+      color: #2d2d2d;
+    }
+  }
+}
